@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+</head>
+<body>
+  <button onclick="alert('hello')" >
+      Click Here
+  </button>
+
+  <button id="btn2">
+        Click Here 2
+    </button>
+    <input id="radio" type="radio"> radio
+<script>
+document.getElementById('btn2').onclick = function(){
+clickMeFunction()
+};
+
+function clickMeFunction(){
+    alert('helloworld')
+}
+
+document.getElementById('radio').onclick = function(){
+    clickIt()
+}
+function clickIt(){
+    alert('radio')
+}
+
+</script>
+
+
+	
+</body>
+</html>
