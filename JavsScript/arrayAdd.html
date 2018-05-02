@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+</head>
+<body>
+<form>
+<label>insert item then hit submit</label>
+<input id="userInput">
+<button id="addbtn">Add</button>
+<button id="delete">Delete</button>
+</form>
+
+<script>
+var userInput = document.getElementById('userInput')
+
+var deleteArray = document.getElementById('delete')
+var nameArray = ['hi','ho'];
+event.preventDefault();
+
+document.getElementById('addbtn').addEventListener('click', function() {
+    alert('helllow world')
+});
+
+
+
+
+
+
+
+
+
+
+// addArray.addEventListener('click', function(userInput){
+//     function addArrayValue(a){
+//    nameArray.push(a); 
+   
+//    }
+
+// });
+
+// deleteArray.addEventListener('click', function(userInput){
+//     function deleteArray (value){
+    
+//     for(i = 0; i < nameArray.length; i++){
+//         if(nameArray[i] == value)
+//         nameArray.splice(i,1);
+        
+//         break;
+//     }
+// }});
+// for(i = 0; i < nameArray.length; i++)
+//     document.getElementById('list').innerHTML = ('<li>' + i + '</li>')
+</script>
+<ul id="list">
+
+</ul>
+
+	
+</body>
+</html>

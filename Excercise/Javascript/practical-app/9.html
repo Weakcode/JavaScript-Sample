@@ -47,7 +47,7 @@ function saying anything you want, like we did on the video.
 
 -->
 
-<button id="theButton" class="btn btn-primary">SUBMIT</button>
+<button id="theButton" class="btn btn-primary" onclick="alert('onclick')">SUBMIT</button>
 
 
 
@@ -62,10 +62,10 @@ function saying anything you want, like we did on the video.
 
 <!--STEP 1 - Create a button with an id of clickMe that says Click Me-->
 
-
-
-
 <!--BUTTON HERE-->
+<button id="clickMe" class="btn btn-primary">click me</button>
+
+
 
 
 
@@ -75,6 +75,11 @@ function saying anything you want, like we did on the video.
 // Step 2 Make a function with the name ClickMe and inside the curly brakets call an alert() function to display any text you want.
 
 
+	document.getElementById('clickMe').addEventListener('click', doIt)
+
+	function doIt(){
+		alert('event listener')
+	}
 
 
 //function here........
